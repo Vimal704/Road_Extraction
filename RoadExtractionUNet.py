@@ -68,18 +68,9 @@ class ReUNet(nn.Module):
         # return self.sofmax(self.last(x))
         return self.last(x) # With Binary Cross Entropy Loss with Logits no need to apply softmax function 
     
-if __name__ == '__main__':
-    x = torch.rand((1,3,224,224))
-    model = ReUNet()
-    ans = model(x)
-    print(ans.shape)
-    print(ans)
-
-
-        
-
-
-
-
-        
-        
+# if __name__ == '__main__':
+#     x = torch.rand((1,3,224,224))
+#     model = ReUNet()
+#     ans = model(x)
+#     print(ans.shape)
+#     print(ans)
